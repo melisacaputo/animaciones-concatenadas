@@ -1,0 +1,212 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../media/bg.jpg);
+  background-repeat: space repeat center;
+  color: #000100;
+  font-family: "Oswald", sans-serif;
+}
+
+.botones {
+  font-size: 18px;
+  font-family: oswald, sans-serif;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #f5f5f5;
+  background-color: #444444;
+}
+
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+ol,
+ul {
+  padding-left: 0px;
+}
+
+header {
+  background-color: #000100;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px #000100;
+          box-shadow: 0px 0px 15px 0px #000100;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav div .logo {
+  font-size: 55px;
+  font-style: italic;
+}
+
+header nav div a {
+  margin: 20px;
+}
+
+footer {
+  background-color: #444444;
+  color: #f5f5f5;
+  margin-top: 60px;
+  padding: 20px;
+  bottom: 0px;
+  font-size: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .footer-content {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content .footer-info li {
+  list-style-type: none;
+}
+
+footer .footer-content .footer-info li:first-of-type {
+  margin-bottom: 10px;
+}
+
+footer .footer-content .footer-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-content .footer-redes li {
+  list-style-type: none;
+}
+
+footer .footer-content .footer-redes li:first-of-type {
+  margin-right: 20px;
+}
+
+footer .footer-content .footer-redes li i {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+#seleccion {
+  width: 20%;
+  margin: 20px 0px 30px 80px;
+}
+
+#container-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#container-general #section-productos {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#container-general #section-productos .card-product {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+#container-general #section-productos .card-product .img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+#container-general #section-productos .card-product .img-container img {
+  width: 100%;
+  height: 50%;
+  margin: 10px;
+}
+
+#container-general #section-productos .card-product .info-producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container-general #section-carrito {
+  width: 30%;
+  height: 30%;
+  margin: 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #d7c1d7d5;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 200px;
+}
+
+#container-general #section-carrito div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+#container-general #section-carrito div h2,
+#container-general #section-carrito div h3 {
+  font-size: 25px;
+}
+/*# sourceMappingURL=main.css.map */
