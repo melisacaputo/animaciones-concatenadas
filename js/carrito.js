@@ -1,16 +1,19 @@
 //inicializo la variable carrito con una funcion para que detecte si existen valores en el storage
 let carrito = cargarCarrito();
+//cargo las variables de monto y cantidad para que no se pierdan los datos almacenados al refrescar la ventana
+let montoTotalCompra = calcularTotalCarrito();
+let cantidadTotalCompra = carrito.length;
 
 //dentro del document ready agrego todo el codigo generado por dom
 $(document).ready(function () {
   //creacion de la seccion carrito mediante jquery y dom
   $("#section-carrito").append(`<div> 
                                 <h2>Total: $</h2> 
-                                <h2 id="montoTotalCompra"></h2>
+                                <h2 id="montoTotalCompra">${montoTotalCompra}</h2>
                                 </div>
                                 <div> 
                                 <h3>Cantidad de productos:</h3> 
-                                <h3 id="cantidadTotalCompra"></h3>
+                                <h3 id="cantidadTotalCompra">${cantidadTotalCompra}</h3>
                                 </div>
                                 <button class="botones" id="btn-finalizar">Finalizar compra</button>`);
 
@@ -103,6 +106,7 @@ function calcularTotalCarrito() {
   }
   $("#montoTotalCompra").text(total);
   $("#cantidadTotalCompra").text(carrito.length);
+  return total;
 }
 
 function vaciarCarrito() {
